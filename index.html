@@ -206,10 +206,71 @@
         <header>
           <h2 class="h2 article-title">About Us</h2>
         </header>
+       <!-- <div class="container">
+          <span class="text first-text" style="display: inline;"> We Provide </span>
+          <span class="text sec-text" style="display: inline;"></span>
+        </div>-->
         <div class="container">
           <span class="text first-text" style="display: inline;"> We Provide </span>
           <span class="text sec-text" style="display: inline;"></span>
         </div>
+        
+        <style>
+          .body {
+            overflow: hidden;
+          }
+        
+          .container {
+            width: 800px;
+            overflow: hidden;
+          }
+        
+          .container .text {
+            position: relative;
+            color: #4070F4;
+            font-size: 30px;
+            font-weight: 800;
+          }
+        
+          .container .text.first-text {
+            color: #fff;
+          }
+        
+          .text.sec-text::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #010718;
+            border-left: 2px solid #4070F4;
+            animation: animate 5s steps(15) infinite;
+          }
+        
+          @keyframes animate {
+            40%, 60% {
+              left: calc(100% + 4px);
+            }
+            100% {
+              left: 0%;
+            }
+          }
+        
+          @media only screen and (max-width: 480px) {
+            /* Adjustments for mobile view */
+            .container {
+              width: 100%;
+              text-align: center;
+            }
+        
+            .container .text {
+              font-size: 20px;
+            }
+          }
+        </style>
+        
+
         <section class="about-text">
           
           <p>
@@ -531,7 +592,7 @@ Book with us for unforgettable memories of waterfalls, tea plantations, and a sc
     <span>Write a review </span>
   </a>
 </div>
-
+<br><br>
         <!--
           - clients
         -->
@@ -762,18 +823,39 @@ Book with us for unforgettable memories of waterfalls, tea plantations, and a sc
         </section>
       -->
         
-        <!--Button-->
-       <div class="have">
-          <a href="./Project/proposal.pdf">
-            <span>Project Proposal</span>
-          </a>
-        </div>
 
-        <div class="have">
-          <a href="./Project/SAI Estimate.pdf">
-            <span>Expenses</span>
-          </a>
-        </div>
+      <style>
+
+        .bax{
+          padding: 0px;
+          margin: 0px;
+        }
+        @media (max-width : 576px) {
+          .bax{
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column-reverse;
+          }
+        }
+      </style>
+        <!--Button-->
+
+           <div class="have">
+              <a href="./Project/proposal.pdf">
+              <span>Project Proposal</span>
+              </a>
+            </div>
+      
+
+           <div class="have">
+              <a href="./Project/SAI Estimate.pdf">
+              <span>Expenses</span>
+              </a>
+            </div>
+
+            <br><br>
+        
 
 
 
@@ -1093,7 +1175,7 @@ Book with us for unforgettable memories of waterfalls, tea plantations, and a sc
           </ul>
 
         </section>
-
+        <br><br>
       </article>
       
       <!--
@@ -1365,7 +1447,7 @@ Book with us for unforgettable memories of waterfalls, tea plantations, and a sc
           </ul>
 
         </section>
-
+        <br><br>
       </article>
       
     
@@ -1420,6 +1502,7 @@ Book with us for unforgettable memories of waterfalls, tea plantations, and a sc
               <span>Submit</span>
             </button>
 
+          <br><br>
           </form>
 
         </section>
