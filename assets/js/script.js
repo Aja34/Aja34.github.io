@@ -60,13 +60,13 @@ const textLold = () => {
     text.textContent = "Tour Packages";
   }, 0);
   setTimeout(() => {
-    text.textContent = "Accommodation Arrangements";
+    text.textContent = "Accommodation";
   }, 5000);
   setTimeout(() => {
     text.textContent = "Transportation";
   }, 10000);
   setTimeout(() => {
-    text.textContent = "Sri Lanka Tourist Visa";
+    text.textContent = "Tourist Visa";
   }, 15000);
 }
 textLold();
