@@ -66,7 +66,7 @@ const textLold = () => {
     text.textContent = "Transportation";
   }, 10000);
   setTimeout(() => {
-    text.textContent = "Tourist Visa";
+    text.textContent = "Sri Lanka Tourist Visa";
   }, 15000);
 }
 textLold();
